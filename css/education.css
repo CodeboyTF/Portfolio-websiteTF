@@ -157,6 +157,7 @@ body {
     transform: translateY(-5px); /* Slight hover lift */
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
+
 /* Responsive Layout */
 @media (max-width: 768px) {
     .hero h1 {
@@ -167,4 +168,58 @@ body {
         font-size: 0.9rem;
         padding: 8px 15px;
     }
+}
+
+/* Additional Styles for Education Section */
+.qualification-card {
+    display: flex;
+    margin-top: 30px;
+    border: 2px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.qualification-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.qualification-info {
+    flex: 1;
+}
+
+.qualification-info h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.qualification-info h4 {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+.qualification-info p {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 10px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Button Styling for Education Section */
+.btn-primary {
+    margin-top: 20px;
+}
+
+.btn-danger {
+    margin-top: 20px;
+    margin-left: 10px;
 }
