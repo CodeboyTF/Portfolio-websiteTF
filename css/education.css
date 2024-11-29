@@ -173,9 +173,9 @@ body {
 /* Additional Styles for Education Section */
 .qualification-card {
     display: flex;
-    margin-top: 30px;
+    margin-top: 10px;
     border: 2px solid #ddd;
-    padding: 20px;
+    padding: 15px;
     border-radius: 8px;
     background-color: #f9f9f9;
 }
