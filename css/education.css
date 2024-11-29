@@ -194,12 +194,17 @@ body {
 
 .qualification-info h3 {
     font-size: 1.5rem;
-    color: #333;
+    color: #FF8C00;
 }
 
 .qualification-info h4 {
     font-size: 1.2rem;
     color: #555;
+    margin-top: 10px;
+}
+.qualification-info h4 span {
+    font-size: 1.2rem;
+    color: #FF8C00;
     margin-top: 10px;
 }
 
@@ -216,10 +221,14 @@ h2 {
 
 /* Button Styling for Education Section */
 .btn-primary {
+    color: #666;
     margin-top: 20px;
 }
 
 .btn-danger {
+    color: #fff;
+    background-color: #FF8C00;
+    border: 2px solid #ddd;
     margin-top: 20px;
     margin-left: 10px;
 }
