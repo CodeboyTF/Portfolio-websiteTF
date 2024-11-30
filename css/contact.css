@@ -1,0 +1,285 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F5F5DC; /* Beige background */
+    color: #333; /* Default dark text */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #FF8C00; /* Orange background */
+    padding: 6px 0; /* Reduced padding to make header shorter */
+    position: fixed; /* Fix navbar at the top */
+    top: 0; /* Align navbar to the top */
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensure navbar stays on top of other content */
+}
+
+/* Navbar Branding */
+.navbar-brand {
+    font-size: 1.2rem;
+    color: white;
+    font-weight: bold;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+    color: white !important;
+    font-size: 1rem;
+    padding: 10px 18px;
+    transition: 0.3s;
+}
+
+/* Sticky Hover Effect */
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
+    background-color: #F5F5DC !important; /* Beige hover */
+    color: #FF8C00 !important; /* Orange text */
+}
+
+/* Hero Section */
+.hero {
+    background-color: #FF8C00; /* Orange */
+    color: white;
+    text-align: center;
+    padding: 25px 15px; /* Reduced padding for smaller section */
+    margin-top: 60px; /* Adjust margin to avoid header overlap */
+}
+
+.hero img {
+    width: 180px; /* Width of the rectangle */
+    height: 280px; /* Height of the rectangle */
+    object-fit: cover; /* Ensure image covers the rectangle */
+    margin-bottom: 15px;
+    border-radius: 10px; /* Slightly rounded corners for a more modern look */
+}
+
+.hero h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* Blinking Effect for the Paragraph */
+@keyframes blinkText {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.hero p {
+    font-size: 1rem;
+    margin-top: 8px;
+    animation: blinkText 2s infinite; /* Apply the blinking effect */
+}
+
+/* Social Links */
+.social-links a {
+    font-size: 1rem;
+    margin: 8px;
+    color: white;
+    text-decoration: none;
+    background-color: #FF8C00;
+    border: 2px solid white;
+    padding: 8px 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    background-color: #F5F5DC;
+    color: #FF8C00;
+}
+
+/* About Section */
+.about {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about h2 {
+    font-size: 1.8rem;
+    color: #FF8C00;
+    font-weight: 700;
+}
+
+.about p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cards Section */
+.cards {
+    display: flex;
+    justify-content: space-between; /* Align cards horizontally with spacing */
+    margin: 20px auto;
+    padding: 10px;
+    max-width: 90%; /* Constrain the width of the card section */
+}
+
+.card {
+    background-color: #FFFAF0; /* Light beige for card background */
+    border: 1px solid #FF8C00; /* Orange border */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+    flex: 1; /* Allow cards to resize proportionally */
+    margin: 0 10px; /* Space between cards */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    color: #FF8C00; /* Orange text for headings */
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Slight hover lift */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .social-links a {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+}
+
+.hero {
+    background-color: #FF8C00;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 60px;
+    transition: transform 0.4s ease-in-out; /* Smooth transition for sliding */
+}
+
+.hero:hover {
+    transform: translateX(10px); /* Slides slightly to the right on hover */
+}
+
+.card {
+    background-color: #FFFAF0;
+    border: 1px solid #FF8C00;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+    flex: 1;
+    margin: 0 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateX(-10px); /* Slides slightly to the left on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.about {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease-in-out;
+}
+
+.about:hover {
+    transform: translateY(-10px); /* Slides slightly upward on hover */
+}
+
+/* Style for the Form */
+.contact-form {
+    position: fixed; /* Fixed position on the screen */
+    top: 55%; /* Vertical center */
+    left: 64%; /* Horizontal center */
+    transform: translate(-50%, -50%); /* Center the form exactly */
+    background-color: #fff; /* White background */
+    padding: 20px 25px; /* Comfortable padding */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 12px; /* Rounded corners */
+    width: 300px; /* Width of the form */
+    font-family: 'Arial', sans-serif;
+    font-size: 14px; /* Compact font size */
+    z-index: 1000; /* Ensure it’s on top */
+}
+
+/* Form Heading */
+.contact-form h2 {
+    color: #FF8C00; /* Orange heading */
+    font-size: 1.5rem; /* Slightly larger text for the heading */
+    margin-bottom: 15px; /* Space below the heading */
+    text-align: center; /* Center the heading */
+}
+
+/* Form Input Fields */
+.contact-form input, 
+.contact-form textarea {
+    width: 100%; /* Full width */
+    padding: 10px; /* Comfortable padding */
+    margin-bottom: 12px; /* Space between inputs */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 14px; /* Text size for inputs */
+    transition: border-color 0.3s ease; /* Smooth transition for focus */
+}
+
+/* Input focus style */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #FF8C00; /* Highlight border on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Form Button */
+.contact-form button {
+    width: 100%; /* Full width */
+    padding: 12px; /* Button padding */
+    background-color: #FF8C00; /* Orange button */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    border-radius: 8px; /* Rounded edges */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 14px; /* Button text size */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.contact-form button:hover {
+    background-color: #e07b00; /* Darker orange on hover */
+}
+
+/* Textarea */
+.contact-form textarea {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .contact-form {
+        width: 90%; /* Make the form take up most of the screen width on small devices */
+        top: 50%; /* Center it vertically */
+    }
+}
