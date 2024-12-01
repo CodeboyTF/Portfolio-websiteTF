@@ -1,0 +1,150 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F5F5DC; /* Beige background */
+    color: #333; /* Default dark text */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #FF8C00; /* Orange background */
+    padding: 6px 0; /* Reduced padding to make header shorter */
+    position: fixed; /* Fix navbar at the top */
+    top: 0; /* Align navbar to the top */
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensure navbar stays on top of other content */
+}
+
+/* Navbar Branding */
+.navbar-brand {
+    font-size: 1.2rem;
+    color: white;
+    font-weight: bold;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+    color: white !important;
+    font-size: 1rem;
+    padding: 10px 18px;
+    transition: 0.3s;
+}
+
+/* Sticky Hover Effect */
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
+    background-color: #F5F5DC !important; /* Beige hover */
+    color: #FF8C00 !important; /* Orange text */
+}
+
+/* Carousel Container */
+#internshipCarousel {
+    width: 60%; /* Adjust carousel size */
+    margin: auto; /* Center carousel horizontally */
+    margin-top: 20px; /* Small spacing from the navbar */
+    background-color: #F5F5DC; /* Beige background */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Padding for internal spacing */
+    border: 2px solid #FF8C00; /* Subtle border for emphasis */
+}
+
+/* Carousel Inner Items */
+.carousel-inner {
+    border-radius: 8px; /* Match container radius */
+    overflow: hidden; /* Ensure content fits within rounded edges */
+}
+
+/* Carousel Images */
+.carousel-item img {
+    width: 100%; /* Images fill the carousel */
+    height: auto; /* Maintain aspect ratio */
+    background-color: #F5F5DC; /* Beige background behind images */
+    border-bottom: 2px solid #FF8C00; /* Thin orange border for separation */
+}
+
+/* Carousel Controls */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #333; /* Dark controls for visibility */
+    border-radius: 50%; /* Circular controls */
+    padding: 8px; /* Adjust control size */
+}
+
+/* Carousel Control Hover */
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: #FF8C00; /* Orange hover effect */
+}
+
+/* Card Inside Carousel */
+.card {
+    border: none; /* Remove default card border */
+    background-color: #F5F5DC; /* Match carousel and body background */
+    text-align: center; /* Center-align text */
+    color: #333; /* Default dark text */
+}
+
+/* Card Title */
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #FF8C00; /* Orange for emphasis */
+}
+
+/* Card Text */
+.card-text {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    color: #333; /* Default dark text for readability */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #internshipCarousel {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+}
+
+/* Experience Section */
+.experience-section {
+    text-align: center; /* Horizontally center the text */
+    margin-top: 20px; /* Space from the top of the page */
+    margin-bottom: 20px; /* Space below the heading before the carousel */
+}
+
+.experience-section h2 {
+    font-size: 2rem; /* Adjust the size of the heading */
+    color: #FF8C00; /* Orange color for emphasis */
+}
+
+/* Center the download button container */
+.download-button {
+    text-align: center; /* Center the button horizontally */
+    margin-top: 20px; /* Space between the carousel and the button */
+}
+
+/* Style for the orange button */
+.download-button .btn {
+    background-color: #FF8C00 !important; /* Force orange background */
+    color: #fff !important; /* Force white text */
+    font-size: 1rem; /* Font size for the button */
+    padding: 10px 20px; /* Padding for a larger clickable area */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Slightly rounded corners */
+    text-decoration: none; /* Remove underline from the link */
+    display: inline-block; /* Maintain button shape */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for the button */
+.download-button .btn:hover {
+    background-color: #e67e00 !important; /* Slightly darker orange */
+    text-decoration: none; /* Keep text underline removed */
+}
