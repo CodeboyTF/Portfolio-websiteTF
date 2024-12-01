@@ -31,7 +31,7 @@ body {
 
 .nav-link.active,
 .nav-link:hover {
-    background-color: #007bff;
+    background-color: #FF8C00;
     color: #fff;
 }
 
@@ -53,13 +53,13 @@ body {
     padding: 15px;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    display: none; /* Hidden by default */
+    display: hidden; /* Hidden by default */
 }
 
 .project-card h5 {
     margin: 10px 0;
     font-size: 1.2rem;
-    color: #007bff;
+    color: #FF8C00;
 }
 
 .project-card p {
@@ -68,7 +68,7 @@ body {
 }
 
 .project-card.active {
-    display: block; /* Show active cards */
+    display: Active; /* Show active cards */
 }
 
 
@@ -94,12 +94,6 @@ body {
     font-size: 1rem;
     color: #777;
 }
-
-
-
-
-
-
 
 /* Main Navbar */
 .navbar {
@@ -163,7 +157,7 @@ body {
 /* Active and Hover State for Secondary Navbar Links */
 .nav-link.active,
 .nav-link:hover {
-    background-color: #007bff; /* Blue background */
+    background-color: #FF8C00; /* Blue background */
     color: #fff; /* White text */
 }
 
