@@ -7,7 +7,7 @@
     <link rel="icon" type="image/png" href="/images/FO.jpg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/projects.css">
 </head>
 <body class="d-flex flex-column min-vh-100">
     <header>
@@ -21,80 +21,64 @@
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="/Html/about.html">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="/Html/education.html">Education</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/Html/projects.html">Projects</a></li>
                         <li class="nav-item"><a class="nav-link" href="/Html/experience.html">Experience</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/Html/projects.html">Projects</a></li>
                         <li class="nav-item"><a class="nav-link" href="/Html/contact.html">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+ <!-- Navbar for Categories -->
+ <nav class="nav">
+    <a class="nav-link active" data-category="all" href="#">All</a>
+    <a class="nav-link" data-category="software" href="#">Software Development</a>
+    <a class="nav-link" data-category="data" href="#">Data Analytics</a>
+    <a class="nav-link" data-category="web" href="#">Web Development</a>
+    
+    
+</nav>
 
-    <!-- Profile & About Section -->
-    <section class="container mt-5">
-        <div class="row">
-            <!-- Profile Section -->
-            <div class="col-md-4 text-center">
-                <div class="hero">
-                    <img src="/images/green suit.jpg" alt="Your Profile Picture" class="profile-img rounded-circle">
-                    <h1>Fhatuwani</h1>
-                    <p>Software Engineer | Data Analyst | Web Developer</p>
-                    <div class="location">
-                        <i class="fas fa-map-marker-alt"></i> Pretoria, South Africa
-                    </div>
-                    
-                    <div class="social-links">
-                        <a href="mailto:fhatumakhara@gmail.com" class="btn btn-outline-danger">
-                            <i class="fas fa-envelope"></i> Gmail
-                        </a>
-                        <a href="https://www.linkedin.com/in/fhatumakhara15/" class="btn btn-outline-primary">
-                            <i class="fab fa-linkedin"></i> LinkedIn
-                        </a>
-                        <a href="https://github.com/CodeboyTF/Portfolio-websiteTF/blob/main/Css/index.css" class="btn btn-outline-dark">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                        <a href="https://www.kaggle.com/codeboytf" class="btn btn-outline-info">
-                            <i class="fab fa-kaggle"></i> Kaggle
-                        </a>
-                        
-                    </div>
-                </div>
-            </div>
+<!-- Projects List -->
+<div class="projects-container">
+    <!-- Web Projects -->
+    <div class="project-card" data-category="web">
+        <a href="https://github.com/CodeboyTF/Portfolio-websiteTF" target="_blank">
+        <img src="/images/cart.png" alt="Orizon Project" class="project-image">
+        <h5 class="project-title">The Plug Store</h5></a>
+        <p class="project-subtitle">Shopping Cart</p>
+        <p class="project-subtitle">Web Development</p>
+    </div>
 
+    <div class="project-card" data-category="web">
+        <a href="https://github.com/CodeboyTF/Portfolio-websiteTF" target="_blank">
+            <img src="/images/FO.jpg" alt="Orizon Project" class="project-image">
+            <h5 class="project-title">TF-Portfolio</h5></a>
+            <p class="project-subtitle">Dev. Portfolio</p>
+        <p class="project-subtitle">Web development</p>
+    </div>
 
-            
+    <!-- Software Projects -->
+    <div class="project-card" data-category="software">
+        <a href="https://github.com/CodeboyTF/Clock-Python" target="_blank">
+            <img src="/images/analog.jpg" alt="Orizon Project" class="project-image">
+        <h5 class="project-title">Analog Clock</h5></a>
+        <p class="project-subtitle">Python</p>
+    </div>
+    <div class="project-card" data-category="software">
+        <h5 class="project-title">Brawlhalla</h5>
+        <p class="project-subtitle">Voting System</p>
+    </div>
 
-            <nav class="nav">
-                <a class="nav-link active" aria-current="page" href="#">Active</a>
-                <a class="nav-link" href="#">Link</a>
-                <a class="nav-link" href="#">Link</a>
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </nav>
+    <!-- Data Projects -->
+    <div class="project-card" data-category="data">
+        <h5 class="project-title">AI Tool</h5>
+        <p class="project-subtitle">AI & APIs</p>
+    </div>
+    <div class="project-card" data-category="data">
+        <h5 class="project-title">Task Manager</h5>
+        <p class="project-subtitle">Data Analytics</p>
+    </div>
+</div>
 
-
-            <div class="card">
-                <img src="..." class="card-img-top" alt="...">
-              
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-              
-              <div class="card" aria-hidden="true">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title placeholder-glow">
-                    <span class="placeholder col-6"></span>
-                  </h5>
-                  <p class="card-text placeholder-glow">
-                    <span class="placeholder col-7"></span>
-                    <span class="placeholder col-4"></span>
-                    <span class="placeholder col-4"></span>
-                    <span class="placeholder col-6"></span>
-                    <span class="placeholder col-8"></span>
-                  </p>
-                  <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
-                </div>
-              </div>
+<script src="/javascript/projects.js"></script>
